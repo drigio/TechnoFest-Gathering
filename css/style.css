@@ -1,0 +1,168 @@
+
+body {
+    background-color: #000 !important;
+    font-family: "Lato",sans-serif;
+    font-weight: 100 !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.bg-dark {
+    color: #95a5a6;
+}
+
+/*NAVBAR*/
+
+.navbar-color {
+    background:transparent !important;
+}
+
+.navbar a {
+    color: #EEEEEE !important;
+    font-family: "Lato",sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.navbar a:hover {
+    border:1px solid rgba(224, 221, 221, 0.7);
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    transition: border 0.4s;
+}
+
+
+
+/*HEADER*/
+
+.hero {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 6;
+     margin: 10% auto;
+    
+}
+
+.hero h4 {
+    font-weight: 100;
+    font-size: 400%;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.clk {
+    position: absolute;
+    left: 50%;
+    margin-top: 5%;
+    transform: translate(-50%, 0);
+}
+
+.clk {
+   zoom: 0.6;
+   -moz-transform: scale(0.5);
+}
+
+
+/*ABOUT*/
+
+.lead img{
+    display: block;
+    margin: 3% auto 0 auto;
+}
+
+.volunteer-text {
+    font-weight: 300; 
+    font-size: 120%;
+    line-height: 1.6;
+    word-spacing: 1.8px;
+}
+
+
+
+
+/*POSITIONS*/
+
+.card-text {
+    font-weight: 500;
+    font-size: 120%;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-header {
+    padding: 1.5%;
+}
+
+
+
+.text-black {
+    color: #000;
+}
+
+
+/*MEDIA-QUERIES*/
+
+@media (min-width:900px) {
+    #about,
+    #position,
+    #contact {
+        height: 100vh;
+    }
+    
+    .card {
+        background-color: #E7E7DE;
+    }
+    
+    .bg-dark,
+    .card-header {
+        background-color: #008891 !important;
+    }
+    
+    #position,
+    #contact {
+        background-color: #000;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h4 {
+        font-size: 300%;
+    }
+    
+    .clk {
+        zoom: 0.3;
+       -moz-transform: scale(0.3);
+    }
+    
+    
+    .card {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .volunteer-text {
+        font-size: 100%;
+    }
+    .display-3 {
+        font-size: 350% !important;
+    }
+    
+    .lead img {
+        height: 90%;
+        width: 90%;
+    }
+    .clk {
+         zoom: 0.2;
+       -moz-transform: scale(0.2);
+    }
+}
